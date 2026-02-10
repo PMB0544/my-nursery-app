@@ -189,28 +189,28 @@ const initialAttendance = [
 ];
 
 export default function EducationalPlatform() {
-  const [currentRole, setCurrentRole] = useState(null);
-  const [currentUser, setCurrentUser] = useState(null);
-  const [activeTab, setActiveTab] = useState('dashboard');
-  const [children, setChildren] = useState(initialChildren);
-  const [staff, setStaff] = useState(initialStaff);
-  const [observations, setObservations] = useState(initialObservations);
-  const [messages, setMessages] = useState(initialMessages);
-  const [sessions, setSessions] = useState(initialSessions);
-  const [scheduleHistory, setScheduleHistory] = useState(initialScheduleHistory);
-  const [staffSchedule, setStaffSchedule] = useState(initialStaffSchedule);
-  const [attendance, setAttendance] = useState(initialAttendance);
-  const [selectedDate, setSelectedDate] = useState('2026-02-08');
-  const [selectedChildForHistory, setSelectedChildForHistory] = useState(null);
-  const [showScheduleHistoryDialog, setShowScheduleHistoryDialog] = useState(false);
-  const [showEditSchedulePeriodDialog, setShowEditSchedulePeriodDialog] = useState(false);
-  const [showAddObservationDialog, setShowAddObservationDialog] = useState(false);
-  const [showEditObservationDialog, setShowEditObservationDialog] = useState(false);
-  const [showAddMessageDialog, setShowAddMessageDialog] = useState(false);
-  const [showEditMessageDialog, setShowEditMessageDialog] = useState(false);
-  const [selectedObservation, setSelectedObservation] = useState(null);
-  const [selectedMessage, setSelectedMessage] = useState(null);
-  const [observationForm, setObservationForm] = useState({
+  const [currentRole, setCurrentRole] = React.useState(null);
+  const [currentUser, setCurrentUser] = React.useState(null);
+  const [activeTab, setActiveTab] = React.useState('dashboard');
+  const [children, setChildren] = React.useState(initialChildren);
+  const [staff, setStaff] = React.useState(initialStaff);
+  const [observations, setObservations] = React.useState(initialObservations);
+  const [messages, setMessages] = React.useState(initialMessages);
+  const [sessions, setSessions] = React.useState(initialSessions);
+  const [scheduleHistory, setScheduleHistory] = React.useState(initialScheduleHistory);
+  const [staffSchedule, setStaffSchedule] = React.useState(initialStaffSchedule);
+  const [attendance, setAttendance] = React.useState(initialAttendance);
+  const [selectedDate, setSelectedDate] = React.useState('2026-02-08');
+  const [selectedChildForHistory, setSelectedChildForHistory] = React.useState(null);
+  const [showScheduleHistoryDialog, setShowScheduleHistoryDialog] = React.useState(false);
+  const [showEditSchedulePeriodDialog, setShowEditSchedulePeriodDialog] = React.useState(false);
+  const [showAddObservationDialog, setShowAddObservationDialog] = React.useState(false);
+  const [showEditObservationDialog, setShowEditObservationDialog] = React.useState(false);
+  const [showAddMessageDialog, setShowAddMessageDialog] = React.useState(false);
+  const [showEditMessageDialog, setShowEditMessageDialog] = React.useState(false);
+  const [selectedObservation, setSelectedObservation] = React.useState(null);
+  const [selectedMessage, setSelectedMessage] = React.useState(null);
+  const [observationForm, setObservationForm] = React.useState({
     childId: '',
     childName: '',
     date: '',
@@ -221,13 +221,13 @@ export default function EducationalPlatform() {
     observation: '',
     photos: 0
   });
-  const [messageForm, setMessageForm] = useState({
+  const [messageForm, setMessageForm] = React.useState({
     from: '',
     to: '',
     subject: '',
     preview: ''
   });
-  const [editPeriodForm, setEditPeriodForm] = useState({
+  const [editPeriodForm, setEditPeriodForm] = React.useState({
     childId: null,
     startDate: '',
     endDate: '',
@@ -863,3 +863,4 @@ export default function EducationalPlatform() {
                             <div className="flex-1">
 
                               <h4 className="font
+
