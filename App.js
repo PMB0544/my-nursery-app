@@ -1,5 +1,3 @@
-import React, { useState } from 'react';
-
 const SESSION_TIMES = [
   { id: 'morning', label: '8:45 - 12:45', start: '08:45', end: '12:45' },
   { id: 'afternoon', label: '8:45 - 13:45', start: '08:45', end: '13:45' },
@@ -863,4 +861,5 @@ export default function EducationalPlatform() {
                               </svg>
                             </div>
                             <div className="flex-1">
+
                               <h4 className="font
