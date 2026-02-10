@@ -1,3 +1,3 @@
-function EducationalPlatform() { return React.createElement('div', {style: {padding: '50px', textAlign: 'center'}}, React.createElement('h1', null, 'Connection Successful!'), React.createElement('p', null, 'The engine is fixed. Now we can build the dashboard.') ); }
+function EducationalPlatform() { return ( <div style={{padding: '50px', textAlign: 'center'}}> <h1>System Online</h1> <p>The nursery app is ready to build.</p> </div> ); }
 
-const root = ReactDOM.createRoot(document.getElementById('root')); root.render(React.createElement(EducationalPlatform));
+const root = ReactDOM.createRoot(document.getElementById('root')); root.render(<EducationalPlatform />);
